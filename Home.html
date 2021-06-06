@@ -15,6 +15,21 @@
     .main-colour{
         text-decoration-color: #E7D2CC;
     }
+    article {
+    display: block;
+}
+header {
+    display: block;
+}
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 6px;
+    margin-inline-end: 6px;
+    font-weight: bold;
+}
     .card {
     display: grid;
     background-color: #F0C9B3;
@@ -37,6 +52,25 @@
     color: #664015;
     background: #f7f3e9;
     cursor: pointer;
+}
+.card .post-meta {
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.post-meta {
+    font-size: .8rem;
+    color: var(--text-secondary-color);
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.margin{
+    margin-bottom: 5;
+    margin-left: 5;
+    margin-right: 5;
 }
 
 </style>
@@ -67,9 +101,9 @@
         <div class="row">
             <article class="card">
                 <a href="#"><img class="post__featured-shot" src="src\img\pexels-sound-on-3394650.jpg" width="450" height="350" alt=""></a>
-                    <header>
+                   <h3 class="post-title">
                         <a class="post-link" href="/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour">The Beginners Guide to setting up a Gatsby Blog in under an hour</a>
-                        
+                   </h3>
                         <div class="post-meta">November 23, 2020</div>
                         <div class="post__tags">
                         <a class="post__tag roundborder" href="/tags/gatsby">gatsby</a>
