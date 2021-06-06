@@ -8,13 +8,13 @@
     <title>Bule Shade</title>
 </head>
 <style>
-    body{
+body{
         background-color: #EEEDE7;
         border-top: 10px solid #1a0202
-    }
-    .main-colour{
+}
+.main-colour{
         text-decoration-color: #E7D2CC;
-    }
+}
     article {
     display: block;
 }
@@ -24,10 +24,10 @@ header {
 h3 {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 6px;
-    margin-inline-end: 6px;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em; */
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
     font-weight: bold;
 }
     .card {
@@ -39,7 +39,7 @@ h3 {
     box-shadow: 0 0 30px #7E7C73;
     overflow: hidden;
     line-height: 1.5;
-    grid-gap: 32px;
+    grid-gap: 5px;
     margin-top: 32px;
 }
 .roundborder {
@@ -53,24 +53,22 @@ h3 {
     background: #f7f3e9;
     cursor: pointer;
 }
-.card .post-meta {
-    font-weight: 100;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
 
 .post-meta {
     font-size: .8rem;
     color: var(--text-secondary-color);
     margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.margin{
-    margin-bottom: 5;
-    margin-left: 5;
-    margin-right: 5;
+.roundedm{
+    line-height: 2.0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post-link{
+    color: #1a0202;
 }
 
 </style>
@@ -93,24 +91,23 @@ h3 {
     </nav>
 
 
-    <h1>Hey there !</h1>
-
-
     <!-- Cards for blog -->
     <div class="container">
         <div class="row">
             <article class="card">
                 <a href="#"><img class="post__featured-shot" src="src\img\pexels-sound-on-3394650.jpg" width="450" height="350" alt=""></a>
                    <h3 class="post-title">
-                        <a class="post-link" href="/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour">The Beginners Guide to setting up a Gatsby Blog in under an hour</a>
+                        <a class="post-link" href="/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour">Creating a Demo Card!!</a>
                    </h3>
-                        <div class="post-meta">November 23, 2020</div>
+                        <div class="post-meta">June 06, 2021</div>
+                        <div class="roundedm">
                         <div class="post__tags">
-                        <a class="post__tag roundborder" href="/tags/gatsby">gatsby</a>
-                        <a class="post__tag roundborder" href="/tags/react">react</a>
-                        <a class="post__tag roundborder" href="/tags/javascript">javascript</a>
-                        <a class="post__tag roundborder" href="/tags/blog">blog</a>
-                        <a class="post__tag roundborder" href="/tags/netlify">netlify</a>
+                        <a class="post__tag roundborder" href="#">Demo</a>
+                        <a class="post__tag roundborder" href="#">Demo</a>
+                        <a class="post__tag roundborder" href="#">Demo</a>
+                        <a class="post__tag roundborder" href="#">Demo</a>
+                        <a class="post__tag roundborder" href="#">Demo</a>
+                    </div>
                         </div>
                     </header>
             </article>
