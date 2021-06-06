@@ -10,21 +10,38 @@
 <style>
     body{
         background-color: #EEEDE7;
+        border-top: 10px solid #1a0202
     }
     .main-colour{
         text-decoration-color: #E7D2CC;
     }
     .card {
     display: grid;
-    background-color: var(--card-bg);
+    background-color: #F0C9B3;
+    grid-template-columns: 300px;
     border-radius: 9px;
-    border: 1px solid var(--card-bdr);
-    box-shadow: 0 0 30px var(--card-shadow);
+    border: 1px solid #444444;
+    box-shadow: 0 0 30px #7E7C73;
     overflow: hidden;
     line-height: 1.5;
+    grid-gap: 32px;
+    margin-top: 32px;
 }
+.roundborder {
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #664015;
+    color: #664015;
+    background: #f7f3e9;
+    cursor: pointer;
+}
+
 </style>
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="Home.html" >
             <img src="src\img\vector-globe-logo-concept.jpg" width="45" height="35" class="d-inline-block align-top" alt="" loading="lazy">
@@ -40,32 +57,39 @@
             <li class="nav-item"><a class="nav-link">contacts</a></li>
         </ul>
     </nav>
+
+
     <h1>Hey there !</h1>
-    <div class="grids">
-        <article class="card">
-            <a href="#">
-                <img class="post__featured-shot" src="src\img\pexels-sound-on-3394650.jpg" width="45" height="35" alt=""></a>
-                <header>
-                    <h2 class="post-title">
-                    <a class="post-link" href="/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour">The Beginners Guide to setting up a Gatsby Blog in under an hour</a>
-                    </h2>
-                    <div class="post-meta">November 23, 2020</div>
-                    <div class="post__tags">
-                        <a class="post__tag" href="/tags/gatsby">gatsby</a>
-                        <a class="post__tag" href="/tags/react">react</a>
-                        <a class="post__tag" href="/tags/javascript">javascript</a>
-                        <a class="post__tag" href="/tags/blog">blog</a>
-                        <a class="post__tag" href="/tags/netlify">netlify</a>
-                    </div>
-                </header>
-        </article>
+
+
+    <!-- Cards for blog -->
+    <div class="container">
+        <div class="row">
+            <article class="card">
+                <a href="#"><img class="post__featured-shot" src="src\img\pexels-sound-on-3394650.jpg" width="450" height="350" alt=""></a>
+                    <header>
+                        <a class="post-link" href="/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour">The Beginners Guide to setting up a Gatsby Blog in under an hour</a>
+                        
+                        <div class="post-meta">November 23, 2020</div>
+                        <div class="post__tags">
+                        <a class="post__tag roundborder" href="/tags/gatsby">gatsby</a>
+                        <a class="post__tag roundborder" href="/tags/react">react</a>
+                        <a class="post__tag roundborder" href="/tags/javascript">javascript</a>
+                        <a class="post__tag roundborder" href="/tags/blog">blog</a>
+                        <a class="post__tag roundborder" href="/tags/netlify">netlify</a>
+                        </div>
+                    </header>
+            </article>
     </div>
-    <!-- <div class="container">
-    <div class="row justify-content-md-center"> -->
+    </div>
+
+
+
+
+
     <div class="text-center">
         <button class="btn btn-outline-dark justify-content-md-center">Blogs</button>
     </div>
-    <!-- </div></div> -->
 
 
 </body>
