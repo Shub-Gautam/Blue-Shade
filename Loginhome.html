@@ -8,29 +8,52 @@
     <title>Blue Shade</title>
 </head>
 <style>
+    .margin{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .margin1{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     body{
 
         background-color: #EEEDE7;
         margin-top: 7px solid #1a0202
     }
+    .align{
+        border-radius: 7px;
+        border: 3px solid #1a0202;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        right: 20%;
+        left: 25%;
+    }
     .border{
         display: grid;
-        border: 1px;
         grid-template-columns: 300px;
-        border-radius: 7;
-        margin-top: 50;
-        margin-bottom: 50;
-
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 1.5;
     }
 
 </style>
 <body>
+    <div class="align">
     <form action="logi" method="POST">
-        <div class="container">
+        <div class="container margin1">
             <div class="row justify-content-center">
                 <div class="col justify-content-center border">
-                <input type="text" >
-                <input type ="text">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
                 <button type="button" class="btn btn-dark">Sign Up</button>
                     </div>
                 </div>
@@ -38,6 +61,7 @@
         </div>
         
     </form>
+</div>
 </body>
 </html>
 <!-- <div class="card">
